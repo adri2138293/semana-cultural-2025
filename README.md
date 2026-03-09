@@ -1,62 +1,81 @@
 # README – Semana Cultural Zaragoza 2025
 
-## Descripción
-He creado una página web sencilla sobre la **Semana Cultural de Zaragoza 2025**.
-La página muestra información básica del evento, algunas actividades y un pequeño contacto al final.
+## 1. Descripción del proyecto
+Este proyecto es una página web simple hecha con HTML y Bootstrap.  
+La página muestra información sobre la Semana Cultural Zaragoza 2025.
 
-La idea era hacer una web simple usando **HTML**, un poco de **CSS** y **Bootstrap** para que se vea mejor sin tener que programar mucho diseño.
+En la página aparecen:
+- El título del evento
+- La fecha
+- Información del evento
+- Las actividades
+- Un pie de página con contacto
 
-## Estructura de la página
-La página tiene varias partes:
-### 1. Barra de navegación
-En la parte de arriba hay una barra oscura con el nombre **Semana Cultural 2025**.
-Sirve como encabezado de la web.
-Se ha hecho usando una clase de Bootstrap llamada `navbar`.
+Bootstrap se usa para que la página tenga un diseño ordenado y se vea bien en diferentes pantallas.
 
-### 2. Cabecera (Header)
+## 2. Secciones usadas con su número de columnas de Bootstrap
 
-Debajo de la barra hay una imagen grande de fondo con el título del evento y la fecha.
-Para esto he usado:
-* una imagen de internet
-* un poco de CSS para poner la imagen como fondo
-* texto centrado
-Esto sirve para que la página tenga una presentación más visual.
+Navbar  
+Barra superior con el nombre del evento.  
+No usa columnas.
+Header  
+Imagen grande con el título del evento y la fecha.  
+No usa columnas.
+Información  
+Texto que explica el evento y una lista con datos importantes.  
+No usa columnas.
+Actividades  
+Se usa un row de Bootstrap.  
+Dentro hay 3 columnas (col-md-4).  
+Cada columna tiene:
+- una imagen
+- un título
+- un texto corto.
 
-### 3. Información
+Footer  
+Pie de página con el nombre del evento y el email.  
+No usa columnas.
 
-Después hay una sección donde se explica qué es la Semana Cultural.
-También hay una pequeña lista con datos importantes:
-* fecha
-* lugar
-* precio de entrada
+## 3. Componentes prediseñados de Bootstrap usados
 
-Esta parte solo usa HTML básico como `p`, `ul` y `li`.
+En el proyecto se usan estos componentes de Bootstrap:
 
-### 4. Actividades
+- Navbar (barra superior)
+- Container (para centrar el contenido)
+- Row (fila para organizar columnas)
+- Col-md-4 (tres columnas iguales)
+- Img-fluid (para que las imágenes se adapten)
 
-Luego hay una sección con tres actividades:
-* Conciertos
-* Talleres
-* Comida
-Cada actividad tiene:
-* una imagen
-* un título
-* una pequeña descripción
-Para colocarlas en fila se ha usado el sistema de columnas de **Bootstrap (`row` y `col-md-4`)**.
+También se usan algunas clases de Bootstrap:
 
+- bg-dark
+- text-white
+- mt-4
+- p-3
 
-### 5. Footer
-Al final de la página hay un **footer** con:
-* el nombre del evento
-* un email de contacto
-Tiene fondo oscuro para que se diferencie del resto de la página.
+## 4. Descripción de los commits y mejoras
 
-## Tecnologías usadas
-* **HTML** → para la estructura de la página
-* **CSS** → para algunos estilos básicos
-* **Bootstrap 5** → para el diseño y las columnas
+Commit 1 – Estructura básica  
+Se creó el archivo HTML y la estructura básica de la página.
 
-## Objetivo
-El objetivo era hacer una página sencilla sobre un evento cultural, usando lo básico de HTML y Bootstrap para que sea fácil de entender y mantener.
+Commit 2 – Añadir Bootstrap  
+Se añadió el enlace de Bootstrap y se usó container para organizar el contenido.
 
-El objetivo era hacer una página sencilla sobre un evento cultural, usando lo básico de HTML y Bootstrap para que sea fácil de entender y mantener.
+Commit 3 – Crear el header  
+Se añadió una imagen de fondo y el título del evento con la fecha.
+
+Commit 4 – Añadir sección de información  
+Se añadió un texto explicando el evento y una lista con fecha, lugar y precio.
+
+Commit 5 – Crear sección de actividades  
+Se usó row y col-md-4 para hacer tres columnas con imágenes y texto.
+
+Commit 6 – Añadir footer  
+Se añadió un pie de página con el nombre del evento y el email.
+
+## 5. Mayor dificultad encontrada y solución
+La mayor dificultad fue colocar las actividades en tres columnas.
+Para solucionarlo se usó el sistema grid de Bootstrap:
+- row para crear la fila
+- col-md-4 para dividir el espacio en tres partes iguales
+También se usó img-fluid para que las imágenes se ajusten al tamaño de la columna.
