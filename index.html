@@ -1,116 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semana Cultural Zaragoza 2025</title>
+<meta charset="UTF-8">
+<title>Semana Cultural Zaragoza 2025</title>
 
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        .hero {
-            background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac') center/cover no-repeat;
-            height: 70vh;
-            color: white;
-        }
-        .hero-overlay {
-            background: rgba(0,0,0,0.5);
-            height: 100%;
-        }
-    </style>
+<style>
+header{
+    background-image:url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac");
+    background-size:cover;
+    background-position:center;
+    height:300px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+</style>
+
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">Semana Cultural 2025</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#info">Información</a></li>
-                <li class="nav-item"><a class="nav-link" href="#actividades">Actividades</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+	<nav class="navbar navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">Semana Cultural 2025</a>
+		</div>
+	</nav>
 
-<header class="hero d-flex align-items-center">
-    <div class="hero-overlay w-100 d-flex align-items-center">
-        <div class="container text-center">
-            <h1 class="display-3 fw-bold">Semana Cultural Zaragoza 2025</h1>
-            <p class="lead">Del 12 al 18 de mayo – Música, arte, talleres y gastronomía</p>
-            <a href="#info" class="btn btn-primary btn-lg">Más información</a>
-        </div>
-    </div>
-</header>
+	<header>
+		<div>
+			<h1>Semana Cultural Zaragoza 2025</h1>
+			<p>Del 12 al 18 de mayo</p>
+		</div>
+	</header>
 
-<section id="info" class="container py-5">
-    <h2 class="mb-4 text-center">¿Qué es la Semana Cultural?</h2>
-    <div class="row">
-        <div class="col-md-6">
-            <p>
-                La Semana Cultural de Zaragoza es un evento que reúne actividades artísticas,
-                conciertos, exposiciones, talleres varios y gastronomía local. Está dirigido a todos los públicos
-                y se celebra en diferentes espacios de la ciudad.
-            </p>
-        </div>
-        <div class="col-md-6">
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Fecha:</strong> 12–18 mayo 2025</li>
-                <li class="list-group-item"><strong>Lugar:</strong> Zaragoza (Parque Grande)</li>
-                <li class="list-group-item"><strong>Entrada:</strong> 8€</li>
-            </ul>
-        </div>
-    </div>
-</section>
+	<div class="container mt-4">
 
-<section id="actividades" class="bg-light py-5">
-    <div class="container">
-        <h2 class="mb-4 text-center">Actividades destacadas</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Conciertos al aire libre</h5>
-                        <p class="card-text">Bandas locales y artistas top invitados durante toda la semana.</p>
-                    </div>
-                </div>
-            </div>
+		<h2>Información</h2>
+	<p>
+		La Semana Cultural de Zaragoza es un evento con música,
+		arte, talleres y comida típica. Se realiza en diferentes
+		zonas de la ciudad y está abierto a todo el público.
+	</p>
 
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Talleres creativos</h5>
-                        <p class="card-text">Pintura, fotografía, escritura y actividades para niños.</p>
-                    </div>
-                </div>
-            </div>
+	<ul>
+		<li>Fecha: 12 - 18 mayo 2025</li>
+		<li>Lugar: Parque Grande (Zaragoza)</li>
+		<li>Entrada: 8€</li>
+	</ul>
 
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Gastronomía local</h5>
-                        <p class="card-text">Degustaciones y food trucks con productos aragoneses.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+	<h2 class="mt-4">Actividades</h2>
 
-<footer id="contacto" class="bg-dark text-white text-center py-4">
-    <p>Semana Cultural Zaragoza 2025</p>
-    <p>Contacto: info@semanaculturalzgz.es</p>
-</footer>
+	<div class="row">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<div class="col-md-4">
+			<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" class="img-fluid">
+			<h5>Conciertos</h5>
+			<p>Música en directo durante toda la semana.</p>
+		</div>
+
+		<div class="col-md-4">
+			<img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe" class="img-fluid">
+			<h5>Talleres</h5>
+			<p>Talleres de pintura, fotografía y más.</p>
+		</div>
+
+		<div class="col-md-4">
+			<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" class="img-fluid">
+			<h5>Comida</h5>
+			<p>Puestos de comida y food trucks.</p>
+			</div>
+
+	</div>
+
+	</div>
+
+	<footer class="bg-dark text-white text-center mt-4 p-3">
+		<p>Semana Cultural Zaragoza 2025</p>
+		<p>Email: info@semanaculturalzgz.es</p>
+	</footer>
+
 </body>
 </html>
 
